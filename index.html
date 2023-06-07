@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Projekt firmy Studio z Figma. Praca domowa #5 związana z kursem FullStack Developer w GoIT."
+      content="Projekt firmy Studio z Figma. Praca domowa #6 związana z kursem FullStack Developer w GoIT."
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +23,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>WebStudio | goit-markup-hw-05 | GoIT kurs FullStack Developer</title>
+    <title>WebStudio | goit-markup-hw-06 | GoIT kurs FullStack Developer</title>
   </head>
   <!-- end head / metadane /-->
 
@@ -360,40 +360,46 @@
           <h2 class="our-client">Nasi klienci</h2>
           <ul class="our-client-logo-list">
             <li class="our-client-logo-item">
-              <a class="our-client-link" href=""
-                ><svg>
-                  <use href="./images/icons.svg#icon-logo-1"></use></svg
-              ></a>
+              <a class="our-client-link" href="#">
+                <svg>
+                  <use href="./images/icons.svg#icon-logo-1"></use>
+                </svg>
+              </a>
             </li>
             <li class="our-client-logo-item">
-              <a class="our-client-link" href=""
-                ><svg>
-                  <use href="./images/icons.svg#icon-logo-2"></use></svg
-              ></a>
+              <a class="our-client-link" href="">
+                <svg>
+                  <use href="./images/icons.svg#icon-logo-2"></use>
+                </svg>
+              </a>
             </li>
             <li class="our-client-logo-item">
-              <a class="our-client-link" href=""
-                ><svg>
-                  <use href="./images/icons.svg#icon-logo-3"></use></svg
-              ></a>
+              <a class="our-client-link" href="">
+                <svg>
+                  <use href="./images/icons.svg#icon-logo-3"></use>
+                </svg>
+              </a>
             </li>
             <li class="our-client-logo-item">
-              <a class="our-client-link" href=""
-                ><svg>
-                  <use href="./images/icons.svg#icon-logo-4"></use></svg
-              ></a>
+              <a class="our-client-link" href="">
+                <svg>
+                  <use href="./images/icons.svg#icon-logo-4"></use>
+                </svg>
+              </a>
             </li>
             <li class="our-client-logo-item">
-              <a class="our-client-link" href=""
-                ><svg>
-                  <use href="./images/icons.svg#icon-logo-5"></use></svg
-              ></a>
+              <a class="our-client-link" href="">
+                <svg>
+                  <use href="./images/icons.svg#icon-logo-5"></use>
+                </svg>
+              </a>
             </li>
             <li class="our-client-logo-item">
-              <a class="our-client-link" href=""
-                ><svg>
-                  <use href="./images/icons.svg#icon-logo-6"></use></svg
-              ></a>
+              <a class="our-client-link" href="">
+                <svg>
+                  <use href="./images/icons.svg#icon-logo-6"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -438,44 +444,60 @@
           <p class="social-title">DOŁĄCZ DO NAS</p>
           <ul class="social-icon-footer-list">
             <li class="social-icon-footer-item">
-              <a class="social-icon-footer-link" href="https://instagram.com"
-                ><svg><use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
+              <a class="social-icon-footer-link" href="https://instagram.com">
+                <svg>
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-icon-footer-item">
-              <a class="social-icon-footer-link" href="https://twitter.com"
-                ><svg><use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
+              <a class="social-icon-footer-link" href="https://twitter.com">
+                <svg>
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-icon-footer-item">
-              <a class="social-icon-footer-link" href="https://facebook.com"
-                ><svg><use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
+              <a class="social-icon-footer-link" href="https://facebook.com">
+                <svg>
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-icon-footer-item">
-              <a class="social-icon-footer-link" href="https://linkedin.com"
-                ><svg><use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
+              <a class="social-icon-footer-link" href="https://linkedin.com">
+                <svg>
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
-        <form>
-          <p class="newsletter-title">ZAPISZ SIE DO NEWSLETTERA</p>
-          <div class="subscription">
-            <label for="user_email"></label
-            ><input
-              type="email"
-              name="email"
-              placeholder="Email"
-              id="user_email"
-            />
-            <button class="form-button" type="button submit">
-              Zapisz się<svg class="form-send">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
+        <div>
+          <form class="newsletter">
+            <fieldset class="newsletter-group">
+              <legend class="newsletter-title">
+                ZAPISZ SIE DO NEWSLETTERA
+              </legend>
+              <div class="subscription">
+                <!--<label for="user_email"></label>-->
+                <input
+                  class="subscription-email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  id="user_email"
+                />
+                <button class="form-button" type="submit">
+                  Zapisz się
+                  <svg class="form-send">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </footer>
     <!--end footer-->
@@ -489,7 +511,70 @@
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
-        <button class="modal-button" type="button">Wyślij</button>
+        <div class="form-modal">
+          <form class="reg">
+            <fieldset class="reg-group">
+              <legend class="registration-title">
+                Zostaw swoje dane w formularzu poniżej
+              </legend>
+              <label class="reg-title" for="user-name"
+                >Imię
+                <input
+                  class="separated"
+                  class="input"
+                  type="name"
+                  name="name"
+                  id="user-name"
+                /><svg class="reg-icon">
+                  <use href="./images/icons.svg#icon-email-black18-dp-1"></use>
+                </svg>
+              </label>
+              <label class="reg-title" for="user-phone"
+                >Telefon
+                <input
+                  class="separated"
+                  class="input"
+                  type="phone"
+                  name="phone"
+                  id="user-phone"
+                />
+                <svg class="reg-icon">
+                  <use href="./images/icons.svg#icon-phone-black18-dp-1"></use>
+                </svg>
+              </label>
+              <label class="reg-title" for="user-email"
+                >E-mail
+                <input
+                  class="separated"
+                  class="input"
+                  type="email"
+                  name="email"
+                  id="user-email"
+                /><svg class="reg-icon">
+                  <use href="./images/icons.svg#icon-person-black18-dp-1"></use>
+                </svg>
+              </label>
+              <label class="reg-title" for="user-comment"
+                >Komentarz<textarea
+                  class="input-text-area separated"
+                  type="comment"
+                  name="comment"
+                  id="user-comment"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
+              </label>
+            </fieldset>
+          </form>
+          <label class="checkbox"
+            ><input class="check-box" type="checkbox" /><span
+              class="reg-span-checkbox"
+              >Oświadczam iż akceptuję
+              <a href="" target="_blank">Regulamin</a> i
+              <a href="" target="_blank">Politykę Prywatności.</a></span
+            >
+          </label>
+          <button class="reg-button" type="submit">Wyślij</button>
+        </div>
       </div>
     </div>
 

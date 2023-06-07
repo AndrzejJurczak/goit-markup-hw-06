@@ -652,9 +652,9 @@ header {
 .about-client > h3 {
   text-decoration: none;
 }
-/* zadanie 6*/
+/* ---------- homework 6 -------------*/
 .form-button,
-.modal-button {
+.reg-button {
   font-family: inherit;
   font-weight: 700;
   line-height: 1.87;
@@ -666,23 +666,102 @@ header {
   background-color: var(--fourth-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.form-modal {
+  display: flex;
+  flex-direction: column;
+}
 .form-send {
   width: 24px;
   height: 24px;
   fill: var(--background-color-1);
 }
 .subscription {
-  width: 358px;
-  height: 50;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.subscription-email {
+  width: 358px;
+  height: 50px;
 }
 .subscription .form-email {
   width: 358px;
   height: 50px;
 }
-.subscription .form-button {
+/*.subscription .form-button {
   width: 358px;
   height: 50;
+}*/
+.form-modal {
+  width: 448px;
+  margin: auto;
+  margin-top: 40px;
 }
+
+.newsletter-group {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.registration-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.reg-title {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--third-text-color);
+  display: flex;
+  flex-direction: column;
+}
+.reg-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.reg-group input {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.input-text-area {
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  margin-top: 4px;
+}
+.separated {
+  margin-top: 4px;
+}
+.form-modal .reg-button {
+  margin: auto;
+  margin-top: 30px;
+}
+.checkbox {
+  margin: auto;
+  margin-top: 20px;
+}
+.reg-span-checkbox {
+  line-height: 1.17;
+  color: var(--third-text-color);
+}
+.reg-span-checkbox a {
+  color: rgba(33, 150, 243, 1);
+  text-decoration: underline;
+}
+.reg-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--main-text-color);
+}
+/* --------------- end homework 6 -----------*/
