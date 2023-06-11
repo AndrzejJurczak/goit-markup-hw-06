@@ -653,7 +653,7 @@ header {
   text-decoration: none;
 }
 /* ---------- homework 6 -------------*/
-.form-button,
+.newsletter-button,
 .reg-button {
   font-family: inherit;
   font-weight: 700;
@@ -666,23 +666,36 @@ header {
   background-color: var(--fourth-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.form-modal {
+.newsletter-button {
+  margin-top: 20px;
+}
+.form-registration {
   display: flex;
   flex-direction: column;
 }
-.form-send {
+.newsletter-1 {
+  display: flex;
+  justify-content: space-around;
+}
+.newsletter-icon {
   width: 24px;
   height: 24px;
   fill: var(--background-color-1);
 }
 .subscription {
   display: flex;
-  justify-content: center;
+  /*justify-content: center;
   align-items: center;
+}*/
 }
 .subscription-email {
   width: 358px;
-  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  margin-top: 20px;
 }
 .subscription .form-email {
   width: 358px;
@@ -692,7 +705,7 @@ header {
   width: 358px;
   height: 50;
 }*/
-.form-modal {
+.modal-form-registration {
   width: 448px;
   margin: auto;
   margin-top: 40px;
@@ -703,7 +716,130 @@ header {
   margin: 0;
   border: none;
 }
-.registration-title {
+
+.modal-window-registration {
+  width: 448px;
+  margin: auto;
+}
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: rgba(33, 33, 33, 1);
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.label-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 10px;
+  color: rgba(117, 117, 117, 1);
+}
+.input-style {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-window {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
+}
+.input-style:focus-within,
+.modal-window:focus-within {
+  fill: var(--fourth-color);
+  border-color: var(--fourth-color);
+}
+.modal-window-icon {
+  position: absolute;
+  fill: rgba(33, 33, 33, 1);
+  transform: translateY(-50%);
+  top: 50%;
+  left: 13px;
+}
+.modal-window:focus + .modal-window-icon {
+  fill: var(--fourth-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  color: rgba(117, 117, 117, 0.5);
+  resize: none;
+}
+.comment::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-window-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--fifth-color);
+  background-color: var(--fourth-color);
+  padding: 10px 76px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.checkbox-window {
+  display: block;
+  margin-bottom: 3px;
+  line-height: 1.71;
+  color: var(--third-text-color);
+  text-align: center;
+  cursor: pointer;
+}
+.checkbox-input {
+  appearance: none;
+  position: absolute;
+}
+.checkbox-icon {
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 2px;
+  transition-property: background-color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-vector {
+  display: block;
+  width: 16px;
+  height: 15px;
+  fill: var(--fourth-color);
+}
+.checkbox-agreement {
+  display: inline;
+  margin-left: 70px;
+}
+.checkbox-input:checked + .checkbox-icon {
+  background-color: var(--fourth-color);
+  border-color: var(--fourth-color);
+}
+/*.registration-title {
   color: var(--main-text-color);
   font-weight: 700;
   font-size: 20px;
@@ -743,13 +879,36 @@ header {
 .separated {
   margin-top: 4px;
 }
+.separated:focus,
+.separated:hover {
+  border-color: var(--fourth-color);
+}
 .form-modal .reg-button {
   margin: auto;
   margin-top: 30px;
 }
+/ ========= registration form ======== /
+.checkbox-accept {
+}
 .checkbox {
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 30px;
+}
+.checkbox-icon {
+  width: 16px;
+  height: 15px;
+  border-color: var(--button-text-color);
+  margin-left: 10px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-input {
+  opacity: 0;
+}
+.checkbox-input:checked {
+  background-color: var(--fourth-color);
+  border: none;
 }
 .reg-span-checkbox {
   line-height: 1.17;
@@ -760,8 +919,14 @@ header {
   text-decoration: underline;
 }
 .reg-icon {
+  pointer-events: none;
+  position: absolute;
+  fill: var(--fourth-color);
   width: 18px;
   height: 18px;
   color: var(--main-text-color);
 }
+.reg-button {
+  margin: 0 auto;
+}*/
 /* --------------- end homework 6 -----------*/

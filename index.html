@@ -475,27 +475,27 @@
         </div>
         <div>
           <form class="newsletter">
-            <fieldset class="newsletter-group">
-              <legend class="newsletter-title">
-                ZAPISZ SIE DO NEWSLETTERA
-              </legend>
-              <div class="subscription">
-                <!--<label for="user_email"></label>-->
-                <input
-                  class="subscription-email"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  id="user_email"
-                />
-                <button class="form-button" type="submit">
+            <label class="newsletter-title" for="user-email"
+              >ZAPISZ SIE DO NEWSLETTERA</label
+            >
+            <div class="subscription">
+              <!--<label for="user_email"></label>-->
+              <input
+                class="subscription-email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                id="user_email"
+              />
+              <div class="newsletter-1">
+                <button class="newsletter-button" type="submit">
                   Zapisz się
-                  <svg class="form-send">
+                  <svg class="newsletter-icon">
                     <use href="./images/icons.svg#icon-icon-send"></use>
                   </svg>
                 </button>
               </div>
-            </fieldset>
+            </div>
           </form>
         </div>
       </div>
@@ -511,73 +511,79 @@
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
         </button>
-        <div class="form-modal">
-          <form class="reg">
-            <fieldset class="reg-group">
-              <legend class="registration-title">
-                Zostaw swoje dane w formularzu poniżej
-              </legend>
-              <label class="reg-title" for="user-name"
-                >Imię
-                <input
-                  class="separated"
-                  class="input"
-                  type="name"
-                  name="name"
-                  id="user-name"
-                /><svg class="reg-icon">
-                  <use href="./images/icons.svg#icon-email-black18-dp-1"></use>
+
+        <div class="modal-window-registration">
+          <form class="form-registration">
+            <h3 class="form-title">Zostaw swoje dane w formularzu ponizej</h3>
+            <label class="label-title"
+              >Imię
+              <div class="input-style">
+                <input class="modal-window" type="text" name="name" required />
+                <svg class="modal-window-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
                 </svg>
-              </label>
-              <label class="reg-title" for="user-phone"
-                >Telefon
-                <input
-                  class="separated"
-                  class="input"
-                  type="phone"
-                  name="phone"
-                  id="user-phone"
-                />
-                <svg class="reg-icon">
-                  <use href="./images/icons.svg#icon-phone-black18-dp-1"></use>
+              </div>
+            </label>
+            <label class="label-title"
+              >Telefon
+              <div class="input-style">
+                <input class="modal-window" type="tel" name="phone" required />
+                <svg class="modal-window-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
-              </label>
-              <label class="reg-title" for="user-email"
-                >E-mail
+              </div>
+            </label>
+            <label class="label-title"
+              >Email
+              <div class="input-style">
                 <input
-                  class="separated"
-                  class="input"
+                  class="modal-window"
                   type="email"
                   name="email"
-                  id="user-email"
-                /><svg class="reg-icon">
-                  <use href="./images/icons.svg#icon-person-black18-dp-1"></use>
+                  required
+                />
+                <svg class="modal-window-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email"></use>
                 </svg>
-              </label>
-              <label class="reg-title" for="user-comment"
-                >Komentarz<textarea
-                  class="input-text-area separated"
-                  type="comment"
-                  name="comment"
-                  id="user-comment"
-                  placeholder="Wprowadź tekst"
-                ></textarea>
-              </label>
-            </fieldset>
+              </div>
+            </label>
+            <label class="label-title"
+              >Komentarz
+              <textarea
+                class="modal-window comment"
+                name="feedback"
+                rows="5"
+                placeholder="Wprowadź tekst"
+                required
+              ></textarea>
+            </label>
+            <label for="statute" class="checkbox-window">
+              <input
+                type="checkbox"
+                class="checkbox-input"
+                name="statute_acceptance"
+                value="statute"
+                id="statute"
+                required
+              />
+              <span class="checkbox-icon">
+                <svg class="checkbox-vector" width="16" height="150">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <p class="checkbox-agreement">
+                Oświadczam iż akceptuję
+                <a href="" class="underline-link">Regulamin </a> i
+                <a href="" class="underline-link">Politykę Prywatności.</a>
+              </p>
+            </label>
+            <div class="button-position">
+              <button class="modal-window-button" type="submit">Wyślij</button>
+            </div>
           </form>
-          <label class="checkbox"
-            ><input class="check-box" type="checkbox" /><span
-              class="reg-span-checkbox"
-              >Oświadczam iż akceptuję
-              <a href="" target="_blank">Regulamin</a> i
-              <a href="" target="_blank">Politykę Prywatności.</a></span
-            >
-          </label>
-          <button class="reg-button" type="submit">Wyślij</button>
         </div>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>
