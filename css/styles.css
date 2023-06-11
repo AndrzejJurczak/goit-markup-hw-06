@@ -666,16 +666,16 @@ header {
   background-color: var(--fourth-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.reg-button {
+  padding: 10px 76px;
+  margin: 0 auto;
+}
 .newsletter-button {
   margin-top: 20px;
-}
-.form-registration {
   display: flex;
-  flex-direction: column;
-}
-.newsletter-1 {
-  display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 .newsletter-icon {
   width: 24px;
@@ -684,31 +684,22 @@ header {
 }
 .subscription {
   display: flex;
-  /*justify-content: center;
-  align-items: center;
-}*/
 }
 .subscription-email {
   width: 358px;
-
+  background: rgba(47, 48, 58, 1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 12px;
   margin-top: 20px;
 }
+.subscription-email::placeholder {
+  padding-left: 15px;
+}
 .subscription .form-email {
   width: 358px;
   height: 50px;
-}
-/*.subscription .form-button {
-  width: 358px;
-  height: 50;
-}*/
-.modal-form-registration {
-  width: 448px;
-  margin: auto;
-  margin-top: 40px;
 }
 
 .newsletter-group {
@@ -716,8 +707,8 @@ header {
   margin: 0;
   border: none;
 }
-
-.modal-window-registration {
+/* registration */
+.modal-form-registration {
   width: 448px;
   margin: auto;
 }
@@ -747,12 +738,10 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-window {
+.modal-registration-window {
   display: block;
   width: 100%;
   height: 40px;
-  padding-top: 11px;
-  padding-bottom: 11px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -762,25 +751,26 @@ header {
   outline: transparent;
 }
 .input-style:focus-within,
-.modal-window:focus-within {
+.modal-registration-window:focus-within {
   fill: var(--fourth-color);
   border-color: var(--fourth-color);
 }
-.modal-window-icon {
+.modal-registration-icon {
+  width: 18px;
+  height: 18px;
   position: absolute;
   fill: rgba(33, 33, 33, 1);
   transform: translateY(-50%);
   top: 50%;
   left: 13px;
 }
-.modal-window:focus + .modal-window-icon {
+.modal-registration-window:focus + .modal-registration-icon {
   fill: var(--fourth-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comment {
-  width: 100%;
   height: 120px;
   padding: 12px 16px;
   margin-top: 4px;
@@ -793,51 +783,40 @@ header {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-window-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--fifth-color);
-  background-color: var(--fourth-color);
-  padding: 10px 76px;
-  margin: 0 auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+.checkbox-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
-.checkbox-window {
-  display: block;
-  margin-bottom: 3px;
-  line-height: 1.71;
-  color: var(--third-text-color);
-  text-align: center;
-  cursor: pointer;
+.checkbox {
+  display: flex;
+  margin-top: 20px;
 }
 .checkbox-input {
-  appearance: none;
-  position: absolute;
+  opacity: 0;
 }
 .checkbox-icon {
-  display: inline-block;
-  border: 2px solid black;
-  border-radius: 2px;
-  transition-property: background-color, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.checkbox-vector {
-  display: block;
   width: 16px;
   height: 15px;
-  fill: var(--fourth-color);
+  margin-right: 7px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  fill: var(--background-color-1);
 }
-.checkbox-agreement {
-  display: inline;
-  margin-left: 70px;
+
+.checkbox-icon:focus,
+.checkbox-icon:hover {
+  fill: red;
+  background-color: red;
+  border: red;
 }
-.checkbox-input:checked + .checkbox-icon {
-  background-color: var(--fourth-color);
-  border-color: var(--fourth-color);
+.checkbox-rules {
+  line-height: 1.71;
+  color: rgba(117, 117, 117, 1);
+}
+.registration-link {
+  color: var(--fourth-color);
+  text-decoration: underline;
 }
 /*.registration-title {
   color: var(--main-text-color);
