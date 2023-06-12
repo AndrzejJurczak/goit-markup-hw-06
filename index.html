@@ -560,7 +560,7 @@
               required
             ></textarea>
           </label>
-          <label class="checkbox">
+          <!--<label class="checkbox">
             <input
               type="checkbox"
               class="checkbox-input"
@@ -568,34 +568,47 @@
               required
             />
             <div class="checkbox-agreement">
-              <!--<svg class="checkbox-icon-hidden">
-                  <use href="./images/icons.svg#icon-checkbox"></use>
-                </svg>-->
-              <svg class="checkbox-icon">
-                <use href="./images/icons.svg#icon-checked"></use>
-              </svg>
-              <p class="checkbox-rules">
+              <div class="checkbox-square">
+                <svg class="checkbox-icon" width="16px" height="15px">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </div>
+              <div class="checkbox-thick">
+                <svg class="checkbox-icon" width="16px" height="15px">
+                  <use href="./images/icons.svg#icon-Vector-2"></use>
+                </svg>
+              </div>
+              <span class="checkbox-rules">
                 Oświadczam iż akceptuję
                 <a href="" class="registration-link">Regulamin</a> i
                 <a href="" class="registration-link">Politykę Prywatności.</a>
-              </p>
+              </span>
             </div>
-          </label>
-          <button class="reg-button" type="submit">Wyślij</button
-          ><label class="box"
-            ><input class="box1" type="checkbox" /><span class="box2"></span>
-            <p class="klik">klik</p></label
-          >
-
-          <label class="a">
-            <input type="checkbox" class="b" />
-            <span class="c"
-              ><svg class="d" width="10px" height="10px">
-                <use href="/images/icons.svg#icon-checked"></use>
+          </label>-->
+          <label class="declaration-label">
+            <input
+              class="modal-checkbox"
+              type="checkbox"
+              name="terms"
+              required
+            />
+            <div class="checkbox-square">
+              <svg class="checkbox-icon">
+                <use href="./images/icons.svg#icon-check"></use>
               </svg>
-            </span>
-            <span class="e">regulamin</span>
+            </div>
+            <div class="checkbox-checked">
+              <svg class="checkbox-icon">
+                <use href="./images/icons.svg#icon-Vector-2"></use>
+              </svg>
+            </div>
+            <p class="checkbox-rules">
+              Oświadczam iż akceptuję
+              <a class="terms-link" href="#">Regulamin</a> i
+              <a class="terms-link" href="#">Politykę Prywatności.</a>
+            </p>
           </label>
+          <button class="reg-button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>

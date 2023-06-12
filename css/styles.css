@@ -768,7 +768,7 @@ header {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.checkbox-agreement {
+/*.checkbox-agreement {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -787,6 +787,18 @@ header {
   color: var(--fourth-color);
   border: var(--fourth-color);
   fill: var(--fourth-color);
+}*/
+
+/* .checkbox-input:checked ~ .checkbox-thick {
+  visibility: visible;
+}
+.checkbox-input:checked + .checkbox-square {
+  visibility: hidden;
+}*/
+.declaration-label {
+  display: flex;
+  margin-left: 7px;
+  margin-bottom: 30px;
 }
 .checkbox-icon {
   width: 16px;
@@ -795,45 +807,35 @@ header {
   border: 2px solid rgba(33, 33, 33, 1);
   fill: var(--background-color-1);
 }
-form input:checked + label {
-  color: red;
-}
-.checkbox-input:checked + .checkbox {
-  color: red;
-}
-.klik {
-  margin-left: 20px;
-}
-.box1,
-.box2 {
-  position: absolute;
-}
-.box1:checked + .box2 {
-  width: 16px;
-  height: 15px;
-  border-radius: 4px;
-  color: pink;
-  background-color: blue;
-  border: green;
-  background-image: url(images/icons.svg#icon-check);
-  fill: green;
+.modal-checkbox {
+  visibility: hidden;
 }
 
-.b {
-  opacity: 0;
+.checkbox-square {
+  width: 16px;
+  height: 15px;
 }
-.b:checked + .c {
-  /*width: 10px;
-  height: 10px;
-  background-image: url(images/icons.svg#icon-Vector-2);*/
-  background-color: #2196f3;
-  fill: red;
+
+.checkbox-checked {
+  fill: var(--fifth-color);
+  background-color: var(--fourth-color);
+  width: 16px;
+  height: 15px;
+
+  visibility: hidden;
 }
+.modal-checkbox:checked ~ .checkbox-checked {
+  visibility: visible;
+}
+.modal-checkbox:checked + .checkbox-square {
+  visibility: hidden;
+}
+
 .checkbox-rules {
   line-height: 1.71;
   color: rgba(117, 117, 117, 1);
 }
-.registration-link {
+.terms-link {
   color: var(--fourth-color);
   text-decoration: underline;
 }
