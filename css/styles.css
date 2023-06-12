@@ -505,7 +505,6 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--secondary-text-color);
-  margin-bottom: 20px;
   line-height: 1.17;
 }
 .social-icon-footer {
@@ -513,6 +512,7 @@ header {
   margin-right: 78px;
 }
 .social-icon-footer-list {
+  margin-top: 20px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -533,7 +533,6 @@ header {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .social-icon-footer-link:hover,
@@ -629,6 +628,7 @@ header {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 .modal-close {
   position: absolute;
@@ -671,7 +671,6 @@ header {
   margin: 0 auto;
 }
 .newsletter-button {
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -684,41 +683,24 @@ header {
 }
 .subscription {
   display: flex;
+  margin-top: 20px;
 }
 .subscription-email {
   width: 358px;
   background: rgba(47, 48, 58, 1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 12px;
-  margin-top: 20px;
-}
-.subscription-email::placeholder {
-  padding-left: 15px;
-}
-.subscription .form-email {
-  width: 358px;
-  height: 50px;
-}
-
-.newsletter-group {
-  padding: 0;
-  margin: 0;
-  border: none;
+  color: var(--fifth-color);
+  padding: 15px 16px;
 }
 /* registration */
-.modal-form-registration {
-  width: 448px;
-  margin: auto;
-}
 .form-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   color: rgba(33, 33, 33, 1);
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 .label-title {
@@ -729,6 +711,9 @@ header {
   letter-spacing: 0.01em;
   margin-bottom: 10px;
   color: rgba(117, 117, 117, 1);
+}
+.label-title:nth-child(n + 4) {
+  margin-bottom: 20px;
 }
 .input-style {
   display: block;
@@ -791,13 +776,12 @@ header {
   margin-bottom: 30px;
 }
 .checkbox {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 .checkbox-input {
-  visibility: visible;
+  visibility: hidden;
 }
 .checkbox-input:hover:checked + .checkbox:checked {
   color: var(--fourth-color);
@@ -811,14 +795,40 @@ header {
   border: 2px solid rgba(33, 33, 33, 1);
   fill: var(--background-color-1);
 }
-
-/*.checkbox-icon:checked,
-.checkbox-icon:checked {
-  fill: var(--fourth-color);
-  background-color: red;
+form input:checked + label {
+  color: red;
+}
+.checkbox-input:checked + .checkbox {
+  color: red;
+}
+.klik {
+  margin-left: 20px;
+}
+.box1,
+.box2 {
+  position: absolute;
+}
+.box1:checked + .box2 {
+  width: 16px;
+  height: 15px;
+  border-radius: 4px;
   color: pink;
-  border: red;
-}*/
+  background-color: blue;
+  border: green;
+  background-image: url(images/icons.svg#icon-check);
+  fill: green;
+}
+
+.b {
+  opacity: 0;
+}
+.b:checked + .c {
+  /*width: 10px;
+  height: 10px;
+  background-image: url(images/icons.svg#icon-Vector-2);*/
+  background-color: #2196f3;
+  fill: red;
+}
 .checkbox-rules {
   line-height: 1.71;
   color: rgba(117, 117, 117, 1);
@@ -827,94 +837,5 @@ header {
   color: var(--fourth-color);
   text-decoration: underline;
 }
-/*.registration-title {
-  color: var(--main-text-color);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.17;
-  text-align: center;
-  margin-bottom: 12px;
-}
-.reg-title {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--third-text-color);
-  display: flex;
-  flex-direction: column;
-}
-.reg-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-.reg-group input {
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-.input-text-area {
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  resize: none;
-  padding: 12px 16px;
-  margin-top: 4px;
-}
-.separated {
-  margin-top: 4px;
-}
-.separated:focus,
-.separated:hover {
-  border-color: var(--fourth-color);
-}
-.form-modal .reg-button {
-  margin: auto;
-  margin-top: 30px;
-}
-/ ========= registration form ======== /
-.checkbox-accept {
-}
-.checkbox {
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.checkbox-icon {
-  width: 16px;
-  height: 15px;
-  border-color: var(--button-text-color);
-  margin-left: 10px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.checkbox-input {
-  opacity: 0;
-}
-.checkbox-input:checked {
-  background-color: var(--fourth-color);
-  border: none;
-}
-.reg-span-checkbox {
-  line-height: 1.17;
-  color: var(--third-text-color);
-}
-.reg-span-checkbox a {
-  color: rgba(33, 150, 243, 1);
-  text-decoration: underline;
-}
-.reg-icon {
-  pointer-events: none;
-  position: absolute;
-  fill: var(--fourth-color);
-  width: 18px;
-  height: 18px;
-  color: var(--main-text-color);
-}
-.reg-button {
-  margin: 0 auto;
-}*/
+
 /* --------------- end homework 6 -----------*/

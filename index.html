@@ -441,7 +441,7 @@
           </address>
         </div>
         <div class="social-icon-footer">
-          <p class="social-title">DOŁĄCZ DO NAS</p>
+          <p class="social-title">dołącz do nas</p>
           <ul class="social-icon-footer-list">
             <li class="social-icon-footer-item">
               <a class="social-icon-footer-link" href="https://instagram.com">
@@ -473,30 +473,26 @@
             </li>
           </ul>
         </div>
-        <div>
-          <form class="newsletter">
-            <label class="newsletter-title" for="user-email"
-              >ZAPISZ SIE DO NEWSLETTERA</label
-            >
-            <div class="subscription">
-              <input
-                class="subscription-email"
-                type="email"
-                name="email"
-                placeholder="Email"
-                id="user_email"
-              />
-              <div class="newsletter-1">
-                <button class="newsletter-button" type="submit">
-                  Zapisz się
-                  <svg class="newsletter-icon">
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
+        <form class="newsletter">
+          <label class="newsletter-title" for="user-email"
+            >Zapisz się do newslettera</label
+          >
+          <div class="subscription">
+            <input
+              class="subscription-email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              id="user_email"
+            />
+            <button class="newsletter-button" type="submit">
+              Zapisz się
+              <svg class="newsletter-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <!--end footer-->
@@ -511,84 +507,96 @@
           </svg>
         </button>
 
-        <div class="modal-form-registration">
-          <form class="form-registration">
-            <h3 class="form-title">Zostaw swoje dane w formularzu poniżej</h3>
-            <label class="label-title"
-              >Imię
-              <div class="input-style">
-                <input
-                  class="modal-registration-window"
-                  type="text"
-                  name="name"
-                  required
-                />
-                <svg class="modal-registration-icon">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-              </div>
-            </label>
-            <label class="label-title"
-              >Telefon
-              <div class="input-style">
-                <input
-                  class="modal-registration-window"
-                  type="tel"
-                  name="phone"
-                  required
-                />
-                <svg class="modal-registration-icon">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
-            </label>
-            <label class="label-title"
-              >Email
-              <div class="input-style">
-                <input
-                  class="modal-registration-window"
-                  type="email"
-                  name="email"
-                  required
-                />
-                <svg class="modal-registration-icon">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </div>
-            </label>
-            <label class="label-title"
-              >Komentarz
-              <textarea
-                class="modal-registration-window comment"
-                name="feedback"
-                placeholder="Wprowadź tekst"
-                required
-              ></textarea>
-            </label>
-            <label class="checkbox">
+        <form class="form-registration">
+          <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
+          <label class="label-title"
+            >Imię
+            <div class="input-style">
               <input
-                type="checkbox"
-                class="checkbox-input"
-                name="statute_acceptance"
+                class="modal-registration-window"
+                type="text"
+                name="name"
                 required
               />
-              <div class="checkbox-agreement">
-                <!--<svg class="checkbox-icon-hidden">
+              <svg class="modal-registration-icon">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="label-title"
+            >Telefon
+            <div class="input-style">
+              <input
+                class="modal-registration-window"
+                type="tel"
+                name="phone"
+                required
+              />
+              <svg class="modal-registration-icon">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="label-title"
+            >Email
+            <div class="input-style">
+              <input
+                class="modal-registration-window"
+                type="email"
+                name="email"
+                required
+              />
+              <svg class="modal-registration-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="label-title"
+            >Komentarz
+            <textarea
+              class="modal-registration-window comment"
+              name="feedback"
+              placeholder="Wprowadź tekst"
+              required
+            ></textarea>
+          </label>
+          <label class="checkbox">
+            <input
+              type="checkbox"
+              class="checkbox-input"
+              name="statute_acceptance"
+              required
+            />
+            <div class="checkbox-agreement">
+              <!--<svg class="checkbox-icon-hidden">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>-->
-                <svg class="checkbox-icon">
-                  <use href="./images/icons.svg#icon-checked"></use>
-                </svg>
-                <p class="checkbox-rules">
-                  Oświadczam iż akceptuję
-                  <a href="" class="registration-link">Regulamin</a> i
-                  <a href="" class="registration-link">Politykę Prywatności.</a>
-                </p>
-              </div>
-            </label>
-            <button class="reg-button" type="submit">Wyślij</button>
-          </form>
-        </div>
+              <svg class="checkbox-icon">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+              <p class="checkbox-rules">
+                Oświadczam iż akceptuję
+                <a href="" class="registration-link">Regulamin</a> i
+                <a href="" class="registration-link">Politykę Prywatności.</a>
+              </p>
+            </div>
+          </label>
+          <button class="reg-button" type="submit">Wyślij</button
+          ><label class="box"
+            ><input class="box1" type="checkbox" /><span class="box2"></span>
+            <p class="klik">klik</p></label
+          >
+
+          <label class="a">
+            <input type="checkbox" class="b" />
+            <span class="c"
+              ><svg class="d" width="10px" height="10px">
+                <use href="/images/icons.svg#icon-checked"></use>
+              </svg>
+            </span>
+            <span class="e">regulamin</span>
+          </label>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
