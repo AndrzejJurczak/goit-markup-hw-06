@@ -821,7 +821,8 @@ header {
   background-color: var(--fourth-color);
   width: 16px;
   height: 15px;
-
+  position: relative;
+  right: 16px;
   visibility: hidden;
 }
 .modal-checkbox:checked ~ .checkbox-checked {
